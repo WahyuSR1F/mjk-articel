@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+  }
+body {
+  font-family: 'Noto Sans Javanese', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+
+  
+}
+
+main{
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+h2,
+h3 {
+  color: #F2E8C6;
+  
+}
+
+aside h1,h2,h3{
+  color: #952323;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #952323;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: 400;
+  text-decoration: none;
+  color: wheat;
+}
+
+nav a:hover {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+
+.profile header {
+  text-align: center;
+}
+
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+}
+
+.profile img {
+  width: 200px;
+
+}
+
+.card {
+  box-shadow: 0px -5px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color:#DAD4B5;
+
+  margin: 10px;
+  padding: 15px;
+}
+
+.jumbotron {
+  background-image: url('../image/background.jpg'); /* Ganti 'gambar-anda.jpg' dengan URL gambar yang ingin Anda gunakan */
+  background-size: cover;
+  background-position: center;
+  font-size: 20px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  box-shadow:0px 15px 12px rgba(0, 0, 0, 0.2);
+}
+.overlay {
+  background-color: rgba(167, 49, 33, 0.9); /* Warna latar belakang overlay dengan alpha (transparansi) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navbar{
+
+   background-color: #952323;
+   padding: 5px;
+   border-radius: 0px 0px 20px 20px;
+
+   position: sticky;
+   top: 0;
+
+}
+.navbar ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+.navbar li {
+ 
+  list-style-type: none;
+ 
+
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+
+#content{
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+
+}
+aside{
+  flex: 1;
+
+}
+@media screen and (max-width:1200px){
+  main{
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+  }
+
+  header{
+    display: inline;
+  }
+
+@media screen and (max-width:768px){
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
+.item {
+  flex: 0; /*flex-grow*/
+  flex-flow: column;
+}
+.item {
+  flex: 0 1; /*flex-grow flex-shrink*/
+  flex-flow: wrap;
+}
+.item {
+  flex: 0 auto; /*flex-grow flex-basis*/
+  flex-flow: wrap;
+}
+.item {
+  flex: 0 1 auto; /*flex-grow flex-shrink flex-basis*/
+}
+
+/* meruba scroll website */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
